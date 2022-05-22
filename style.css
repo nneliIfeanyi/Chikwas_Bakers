@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.dflex{
+	display: grid;
+	/*align-items: center;
+	justify-content: space-around;*/
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3px;
+}
+
+.d-grid{
+	display: grid;
+	grid-template-columns: 1.25fr 1.3fr;
+	grid-gap: 3px;
+}
+
+.borda-b{
+	border-bottom: 1.6px orange solid;
+}
+
+.head-letter{
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.dflex img{
+	height: 90px;
+}
+
+.dflex p{
+	color: orange;
+}
+
+.showcase{
+	background-image: url(images/imgs.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:26% 55%; 
+	background-repeat:no-repeat;
+	border-bottom: 2px solid orange;
+	border-top: 0.7px solid orange;
+}
+
+.tparent{
+	height: 80vh;
+	background-color: rgba(0,0,0,0.45);
+}
+
+.showcase h1{
+	font-weight 770;
+	color:antiquewhite !important;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 70px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(10,0,10,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: skyblue;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  z-index: 3;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+textarea{
+	width: 96%;
+	height: 30vh;
+	margin:auto;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 4px;
+  	background-color: #f8f8f8;
+  	font-size: 16px;
+  	resize: none;
+}
+
+
+
+
+
+@media (min-width:601px){
+	.contain{
+		width: 70%;
+		margin: auto;
+	}
