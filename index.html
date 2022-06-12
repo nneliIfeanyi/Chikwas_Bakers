@@ -140,21 +140,21 @@
 
 					<div class="dflex w3-half w3-margin-bottom">
 						<div class="w3-center">
-							<img src="images/butter.jpg" alt="" class="" width="98%">
+							<img src="images/margerine.jpg" alt="" class="" width="98%">
 							<div class="">
-								<p><b>Butter</b></p>
+								<p><b>Margerine</b></p>
 							</div>
 						</div>
 						<div class="w3-center">
-							<img src="images/bdecor.webp" alt="" width="98%">
+							<img src="images/icing.jpg" alt="" width="98%">
 							<div class="">
-								<p><b>Decorating ingredients</b></p>
+								<p><b>Icing sugar</b></p>
 							</div>
 						</div>
 						<div class="w3-center">
 							<img src="images/img/sprink1.jpg" alt="" width="98%">
 							<div class="">
-								<p><b>Baking Spray</b></p>
+								<p><b>Sprinkles</b></p>
 							</div>
 						</div>
 					</div>
@@ -251,32 +251,32 @@
 	        </div>
             <div class="w3-row-padding w3-round-large">
                 <div class="w3-half">
-                	<div class="w3-card w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar" style="height: 100px;overflow-y: scroll;">
+                	<div class="w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar">
 	                  <h3 class="">How soon do I get my item?</h3>
 	                  <p>Once your order is recieved it's processed and packaged for delivery within 24hours.</p>
 	              	</div>
-	              	<div class="w3-card w3-padding w3-margin-bottom w3-border-orange w3-topbar w3-round-large" style="height: 100px;overflow-y: scroll;">
+	              	<div class="w3-padding w3-margin-bottom w3-border-orange w3-topbar w3-round-large">
 	                  <h3>Is there a free shipping?</h3>
-	                  <p>Free shipping is available only within Abuja and environs.</p>
+	                  <p>Free shipping is available only within Abuja and environs.</p><br>
 	              	</div>
-	              	<div class="w3-card w3-padding w3-border-orange w3-topbar w3-margin-bottom w3-round-large" style="height: 100px;overflow-y: scroll;">
+	              	<div class="w3-padding w3-border-orange w3-topbar w3-margin-bottom w3-round-large">
 	                  <h3>I can't find what i'm looking for in this website?</h3>
 	                  <p>Yes, but be assured that whatever baking is available,simply list all you need via our whatsapp page.<a href="https://wa.me/7035963855?text=I'm%20interested%20in%20shopping%20baking%20items">Click here.</a></p>
 	              	</div>
                 </div>
 
                 <div class="w3-half">
-                	<div class="w3-card w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar" style="height: 100px;overflow-y: scroll;">
+                	<div class="w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar">
 	                  <h3>Can i buy in Bulk?</h3>
-	                  <p> Yes, you can buy in bulk and get several discounts.</p>
+	                  <p> Yes, you can buy in bulk and get several discounts.</p><br>
 	              	</div>
 
-	              	<div class="w3-card w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar" style="height: 100px;overflow-y: scroll;">
+	              	<div class="w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar">
 	                  <h3>What payment methods?</h3>
 	                  <p>Cash on delivery is most preferred by most customers, Bank transfers is also accepted.</p>
 	              	</div>
 
-	              	<div class="w3-card w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar" style="height: 100px;overflow-y: scroll;">
+	              	<div class="w3-padding w3-margin-bottom w3-round-large w3-border-orange w3-topbar">
 	                  <h3>I have a different question?</h3>
 	                  <p> If you have more inquiries to make, contact us by sending us a message below.
 					  </p>
@@ -361,5 +361,29 @@ window.onclick = function(event) {
   }
 }
 	</script>
+
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBebuQYETLKwcBGlFna5HssN5K4RKV35ZA",
+    authDomain: "assetsonline-496f1.firebaseapp.com",
+    projectId: "assetsonline-496f1",
+    storageBucket: "assetsonline-496f1.appspot.com",
+    messagingSenderId: "1040010542020",
+    appId: "1:1040010542020:web:2aa78e4c82dd9be0344291",
+    measurementId: "G-KJJBG1ZCB0"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
