@@ -10,10 +10,7 @@ html{
 
 .dflex{
 	display: grid;
-	/*align-items: center;
-	justify-content: space-around;*/
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 3px;
 }
 
 .d-grid{
@@ -146,7 +143,7 @@ textarea{
 .tab button {
 	font-weight: bold;
 	background-color: inherit;
-	float: left;
+	float left;
 	border: none;
 	outline: none;
 	cursor: pointer;
