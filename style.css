@@ -8,6 +8,124 @@ html{
 	scroll-behavior: smooth;
 }
 
+/* ----THE HEADER STYLING----*/
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5rem;
+}
+
+.title{
+	font-size: 30px;
+}
+
+.title a{
+	text-decoration: none;
+}
+.title a:hover{
+	cursor: pointer;
+}
+
+/* THE MENU */
+	.navbar a{
+		padding: 15px;
+		font-weight: bold;
+		display: block;
+		width: 150px;
+		color: 0,0,0,0.6;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 5%;
+
+	}
+
+	.navbar a:hover {
+		color: #f08080;
+		background: orange;
+	}
+
+	.dropbtn{
+		color: white;
+		padding: 10px;
+		font-size: 16px;
+		border: none;
+	}
+
+	.dropbtn > div{
+		background-color: green;
+		height: 3.6px;
+		margin-bottom: 2.7px;
+		width: 17px;
+	}
+
+
+	.navbar{
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdowncontents{
+		right: 0;
+		display:none;
+		position: absolute;
+		background-color: rgba(0,0,0,0.6);
+		min-width: 150px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		border-radius: 5%;
+		z-index: 1;
+	}
+
+	.navbar:hover .dropdowncontents{
+		display: block;
+	}
+
+/* ----THE HEADER STYLING ENDS----*/
+
+/* ----NOW THE SHOWCASE ----*/
+
+.showcase{
+	background-image: url(images/imgs.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:26% 55%; 
+	background-repeat:no-repeat;
+	border-bottom: 2px solid orange;
+	border-top: 0.7px solid orange;
+}
+
+.showcase1{
+	background-image: url(images/img/molds9.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:26% 55%; 
+	background-repeat:no-repeat;
+	border-bottom: 2px solid orange;
+	border-top: 0.7px solid orange;
+}
+
+.showcase2{
+	background-image: url(images/imgs.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position:26% 55%; 
+	background-repeat:no-repeat;
+	border-bottom: 2px solid orange;
+	border-top: 0.7px solid orange;
+}
+
+.tparent{
+	height: 80vh;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.showcase h1{
+	font-weight 770;
+	color:antiquewhite !important;
+}
+
+/* ---- THE SHOWCASE ENDS HERE ----*/
+
 .dflex{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -36,25 +154,6 @@ html{
 	color: orange;
 }
 
-.showcase{
-	background-image: url(images/imgs.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position:26% 55%; 
-	background-repeat:no-repeat;
-	border-bottom: 2px solid orange;
-	border-top: 0.7px solid orange;
-}
-
-.tparent{
-	height: 80vh;
-	background-color: rgba(0,0,0,0.45);
-}
-
-.showcase h1{
-	font-weight 770;
-	color:antiquewhite !important;
-}
 
 #faq p{
 	color: grey;
@@ -64,6 +163,7 @@ html{
 	color: darkgrey;
 	font-weight: bold;
 }
+
 
 /* The Modal (background) */
 .modal {
