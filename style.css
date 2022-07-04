@@ -14,6 +14,10 @@ html{
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 1.5rem;
+	position sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 
 .title{
@@ -105,7 +109,7 @@ html{
 }
 
 .showcase2{
-	background-image: url(images/imgs.jpg);
+	background-image: url(images/img/.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position:26% 55%; 
@@ -125,6 +129,13 @@ html{
 }
 
 /* ---- THE SHOWCASE ENDS HERE ----*/
+
+.grow{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
 
 .dflex{
 	display: grid;
