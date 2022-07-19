@@ -12,6 +12,7 @@
 </head>
 <body class="w3-serif">
 <!-- HEADER -->
+<header>
 	<div class="w3-black nav" style="height: auto;">
 		<div class="title">
 			<a href="index.html">
@@ -38,10 +39,10 @@
 			</div>
 		</div><!-- THE MENU TOGGLE ENDS -->
 	</div><!-- HEADER ENDS -->
-
+</header>
 	
 		<!-- SHOWCASE BEGINS -->
-	<section class="w3-dark-grey showcase2" style="height: 80vh;">
+	<!--<section class="w3-dark-grey showcase2" style="height: 80vh;">
 		
 		<div class="tparent">
 			<div class="w3-container w3-padding-64">
@@ -59,7 +60,8 @@
 	</section>
 	<!-- SHOWCASE ENDS -->
 
-	<!-- Tab links -->
+	<!--=================
+		====TAB LINKS BAR========== -->
 <section class="w3-border-orange w3-topbar">
 	<div class="tab w3-teal">
 	  <button class="tablinks" onclick="openCity(event, 'molds')" id="defaultOpen">Molds</button>
@@ -68,11 +70,25 @@
 	  <button class="tablinks" onclick="openCity(event, 'baking_pans')">Baking Pans</button>
 	  <button class="tablinks" onclick="openCity(event, 'toppers')">Toppers</button>
 	  <button class="tablinks" onclick="openCity(event, 'kitchen_scale')">Kitchen Scale</button>
-	  <button class="tablinks" onclick="openCity(event, 'Tokyo')"></button>
+	  
+	  <!--
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')"></button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')"></button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')"></button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')"></button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')"></button>
+	-->
 	</div>
 
-	<!-- Tab content -->
-	<div id="sprinkles" class="tabcontent w3-border-orange w3-leftbar w3-rightbar">
+	<!--=================
+		====TAB LINKS BAR ENDS========== -->
+
+
+	<!--=================
+		====TAB CONTENTS  STARTS========-->
+
+		<!--===SPRINKLES===-->
+	<div id="sprinkles" class="tabcontent w3-center w3-border-orange w3-leftbar w3-rightbar">
 	  <h3>Sprinkles</h3>
 	  <p></p>
 
@@ -119,10 +135,10 @@
 				</div>
 			</div><!-- The flex ends -->
 		</div><!-- Container row for grid ends -->
-	</div><!-- Tab content ends -->
+	</div><!-- Tab content SPRINKLES ends -->
 
-		<!-- Tab content -->
-	<div id="toppers" class="tabcontent w3-border-orange w3-leftbar w3-rightbar">
+		<!--=== --TOPPERS-- ===-->
+	<div id="toppers" class="tabcontent w3-center w3-border-orange w3-leftbar w3-rightbar">
 	  <h3>Toppers</h3>
 	  <p></p>
 
@@ -169,10 +185,10 @@
 				</div>
 			</div><!-- The flex ends -->
 		</div><!-- Container row for grid ends -->
-	</div><!-- Tab content ends -->
+	</div><!-- Tab content TOPPERS ends -->
 
-		<!-- Tab content -->
-	<div id="kitchen_scale" class="tabcontent w3-border-orange w3-leftbar w3-rightbar">
+		<!--===KITCHEN SCALE===-->
+	<div id="kitchen_scale" class="tabcontent w3-center w3-border-orange w3-leftbar w3-rightbar">
 	  <h3>Kitchen Scale</h3>
 	  <p></p>
 
@@ -219,9 +235,10 @@
 				</div>
 			</div><!-- The flex ends -->
 		</div><!-- Container row for grid ends -->
-	</div><!-- Tab content ends -->
+	</div><!-- Tab content KITCHEN SCALE ends -->
 
-	<div id="molds" class="tabcontent w3-border-orange w3-leftbar w3-rightbar">
+		<!--===MOLDS===-->
+	<div id="molds" class="tabcontent w3-center w3-border-orange w3-leftbar w3-rightbar">
 	  	<h3>Molds</h3>
 	  
 	  	<div class="w3-row w3-small">
@@ -350,18 +367,12 @@
 					<p><b></b></p>
 				</div>
 			</div>
-			<div class="w3-center">
-				<img src="images/img/mold4.jpg" alt="" width="98%">
-				<div class="">
-					<p><b></b></p>
-				</div>
-			</div>
 		</div><!-- The flex ends -->
 		</div><!-- Container row for grid ends -->
-	</div><!-- Tab content ends -->
+	</div><!-- Tab content MOLDS ends -->
 
-
-	<div id="embolzer" class="tabcontent w3-border-orange w3-leftbar w3-rightbar">
+		<!--===EMBOLZERS===-->
+	<div id="embolzer" class="tabcontent w3-center w3-border-orange w3-leftbar w3-rightbar">
 	  	<h3>Embolzers</h3>
 	  	<p></p>
 
@@ -429,13 +440,11 @@
 	  			</div>
 	  		</div><!-- The flex ends -->
   		</div><!-- Container row for grid ends -->
-	</div><!-- Tab content ends -->
-	
+	</div><!-- Tab content EMBOLZERS ends -->
 
-	<div id="molds" class="tabcontent">
-	  <h3>Molds</h3>
-	  <p>Moulds is for make shapes on cakes</p>
-	</div>
+
+	<!--=========
+		=========TAB SCRIPT======-->
 <script type="text/javascript">
 	function openCity(evt, cityName) {
   // Declare all variables
@@ -465,13 +474,13 @@ document.getElementById("defaultOpen").click();
 	<div class="w3-center">
 		<h4 class="w3-tag w3-teal w3-round-large"><b>BUY NOW</b></h4>
 
-		 <div class="w3-container w3-padding-16 w3-white">
+		 <div class="w3-container  w3-padding-16 w3-white">
           	<p class="w3-text-grey">Simply drop your list of <b>Baking</b> items to purchase, and we have it arranged and package, ready for delivery.</p><br>
-          	<p class="w3-left w3-large" style="font-style: italic;"><b>You can write your list through any of the following.</b></p><br>
+          	<p class=" w3-large" style="font-style: italic;"><b>You can write your list through any of the following.</b></p><br>
           	<ul class="w3-margin w3-container" style="text-align: left;">
           		<li>Listing via this our Website</li>
           		<li>Listing via Whatsapp</li>
-          		<li>Give us a Call, (Listing orally)</li>
+          		<li>Give us a Call</li>
           	</ul>
 
           	<div class="dflex w3-center">
@@ -495,7 +504,7 @@ document.getElementById("defaultOpen").click();
 			   <p><i class="fa fa-map-marker fa-fw w3-text-white w3-margin-left w3-xlarge"></i></p>
 			</div>
 		  
-		    <div class="w3-row w3-container">
+		    <div class="w3-row-padding">
 		     	<div class="w3-half w3-margin-bottom">
 		     		<div class="">
 				     <p class="w3-opacity-min w3-text-orange">NO. 20 & 21<br>United line IBB Modern Market<br>Suleja, Abuja</p>
@@ -505,10 +514,10 @@ document.getElementById("defaultOpen").click();
 				     
 			 		</div>
 			 	</div>
-			</div><br>
-			<div class="w3-container">
-			   <p>Let's get in touch. Send us a message:</p>
-			    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+				<div class="w3-container w3-half">
+				   <p>Let's get in touch. Send us a message:</p>
+				    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xlarge w3-margin-right"> </i> Email: stanvicbest@gmail.com</p>
+				</div>
 			</div>
 		</div>
 	</div>
