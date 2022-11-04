@@ -8,6 +8,46 @@ html{
 	scroll-behavior: smooth;
 }
 
+/* image hover styling ---*/
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
 /* ----THE HEADER STYLING----*/
 .nav{
 	display: flex;
@@ -38,7 +78,7 @@ html{
 		font-weight: bold;
 		display: block;
 		width: 150px;
-		color: 0,0,0,0.6;
+		color: white;
 		text-decoration: none;
 		text-transform: uppercase;
 		border-radius: 5%;
@@ -47,21 +87,20 @@ html{
 
 	.navbar a:hover {
 		color: #f08080;
-		background: orange;
+		background: lightgrey;
 	}
 
 	.dropbtn{
-		color: white;
 		padding: 10px;
 		font-size: 16px;
 		border: none;
 	}
 
 	.dropbtn > div{
-		background-color: green;
+		background-color: antiquewhite;
 		height: 3.6px;
 		margin-bottom: 2.7px;
-		width: 17px;
+		width: 27px;
 	}
 
 
@@ -90,7 +129,7 @@ html{
 /* ----NOW THE SHOWCASE ----*/
 
 .showcase{
-	background-image: url(images/imgs.jpg);
+	background-image: url(img/mixer2.jpeg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position:26% 55%; 
@@ -99,18 +138,8 @@ html{
 	border-top: 0.7px solid orange;
 }
 
-.showcase1{
-	background-image: url(images/img/molds9.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position:26% 55%; 
-	background-repeat:no-repeat;
-	border-bottom: 2px solid orange;
-	border-top: 0.7px solid orange;
-}
-
-.showcase2{
-	background-image: url(images/img/.jpg);
+.showcase_{
+	background-image: url(img/mixa.jpeg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position:26% 55%; 
@@ -125,7 +154,6 @@ html{
 }
 
 .showcase h1{
-	font-weight 770;
 	color:antiquewhite !important;
 }
 
@@ -161,6 +189,17 @@ html{
 .dflex{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 4px;
+}
+
+.dflex2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 4px;
+}
+
+.dflex img{
+	height: 100px;
 }
 
 .d-grid{
@@ -313,6 +352,11 @@ textarea{
   to {opacity: 1;}
 }
 
+@media (max-width:601px){
+	.image{
+		height: 60px;
+	}
+}
 
 
 
@@ -321,3 +365,4 @@ textarea{
 		width: 70%;
 		margin: auto;
 	}
+}
