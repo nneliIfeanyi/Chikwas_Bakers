@@ -136,6 +136,10 @@ html{
 	background-repeat:no-repeat;
 	border-bottom: 2px solid orange;
 	border-top: 0.7px solid orange;
+
+	-webkit-animation: gchange 12.5s linear infinite both;
+	     -o-animation: gchange 12.5s linear infinite both;
+	        animation: gchange 12.5s linear infinite both;
 }
 
 .showcase_{
@@ -146,7 +150,22 @@ html{
 	background-repeat:no-repeat;
 	border-bottom: 2px solid orange;
 	border-top: 0.7px solid orange;
+
+	-webkit-animation: gchange 10.5s linear infinite both;
+	     -o-animation: gchange 10.5s linear infinite both;
+	        animation: gchange 10.5s linear infinite both;
 }
+
+@-webkit-keyframes gchange {
+	from { background-image: url(img/mixer2.jpeg);}
+	to { background-image: url(images/imgs.jpg); }
+}
+
+@keyframes gchange{
+	from{background-image:url(img/mixer2.jpeg);}
+	to{background-image:url(images/imgs.jpg);}
+}
+
 
 .tparent{
 	height: 80vh;
@@ -156,6 +175,8 @@ html{
 .showcase h1{
 	color:antiquewhite !important;
 }
+
+
 
 /* ---- THE SHOWCASE ENDS HERE ----*/
 
